@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/103eda2d84.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="app.css">
+
+
+    <title>KEN'S BOOKLIST APP</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+          <i class="fas fa-book-open text-primary"></i>  KEN'S<span class="text-primary"> BOOK</span> LIST APP
+        </h1>
+
+        <form id='book-form'>
+             <div class="form-group">
+                 <label for="title">Book Title</label>
+                 <input type="text" id="title" class="form-control" placeholder="Input book Title">
+             </div>
+
+             <div class="form-group">
+                <label for="author">Book Author</label>
+                <input type="text" id="author" class="form-control" placeholder="Input Author Name">
+            </div>
+
+            <div class="form-group">
+                <label for="isbn">ISBN No.</label>
+                <input type="text" id="isbn" class="form-control" placeholder="ISBN">
+            </div> 
+             
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block" mt-5>
+
+        </form>
+
+        <table class="table table-striped " >
+
+            <thead>
+
+                <tr>  
+                    <th>TITLE</th>
+                    <th>AUTHOR</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+
+            </thead>
+
+            <tbody id="book-list">
+
+            </tbody>
+
+
+        </table>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
